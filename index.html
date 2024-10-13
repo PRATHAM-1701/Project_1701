@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Map Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Profile Map Application</h1>
+    </header>
+    <main>
+        <div class="profile-list">
+            <div class="profile-card">
+                <img src="c:\Users\pavan\OneDrive\Desktop\attractive-middle-aged-business-man-148281084.jpeg" alt="John Doe">
+                <h3>John Doe</h3>
+                <p>Software Developer</p>
+                <button onclick="showMap('John Doe', '37.7749,-122.4194')">View Location</button>
+            </div>
+            <div class="profile-card">
+                <img src="download.jpeg" alt="Jane Smith">
+                <h3>Jane Smith</h3>
+                <p>Project Manager</p>
+                <button onclick="showMap('Jane Smith', '34.0522,-118.2437')">View Location</button>
+            </div>
+        </div>
+
+        <div id="map-container" class="map-container hidden">
+            <h2 id="profile-name">Location</h2>
+            <div id="map" class="map"></div>
+            <button onclick="closeMap()">Close Map</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
